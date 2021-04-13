@@ -20,6 +20,7 @@ extension NSManagedObjectContext {
     func saveOrRollback() {
         do {
             try self.save()
+            print("Successfully saved context")
         } catch let error {
             print("Failed to save context:\n\(error)")
             self.rollback()

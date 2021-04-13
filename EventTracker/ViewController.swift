@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.eventManager = EventManager(storageProvider: self.storageProvider)
-        self.trackEvents()
     }
     
     // MARK: - IBAction
