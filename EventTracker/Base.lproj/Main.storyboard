@@ -16,17 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tow-st-0aQ">
-                                <rect key="frame" x="187.5" y="442.5" width="39" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tow-st-0aQ">
+                                <rect key="frame" x="155" y="442.5" width="104" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1k-oc-2od">
+                                <rect key="frame" x="141.5" y="563.5" width="131" height="30"/>
+                                <state key="normal" title="Track Some Events"/>
+                                <connections>
+                                    <action selector="trackEventsAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ifd-FU-iNi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="t1k-oc-2od" firstAttribute="centerX" secondItem="tow-st-0aQ" secondAttribute="centerX" id="BAx-n0-f4S"/>
                             <constraint firstItem="tow-st-0aQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Oho-CO-CPI"/>
+                            <constraint firstItem="t1k-oc-2od" firstAttribute="top" secondItem="tow-st-0aQ" secondAttribute="bottom" constant="100" id="cPu-rt-xr5"/>
                             <constraint firstItem="tow-st-0aQ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fAt-8Y-w0S"/>
                         </constraints>
                     </view>

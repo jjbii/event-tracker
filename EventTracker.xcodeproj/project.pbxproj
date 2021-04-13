@@ -14,6 +14,16 @@
 		04A9126C262606A10007EF2E /* EventTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04A9126A262606A10007EF2E /* EventTracker.xcdatamodeld */; };
 		04A9126E262606A10007EF2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A9126D262606A10007EF2E /* Assets.xcassets */; };
 		04A91271262606A10007EF2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A9126F262606A10007EF2E /* LaunchScreen.storyboard */; };
+		04D5211D26260A7A004F351B /* OpenedAppDailyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5211126260A7A004F351B /* OpenedAppDailyEvent.swift */; };
+		04D5211F26260A7A004F351B /* CompletedActivityEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5211326260A7A004F351B /* CompletedActivityEvent.swift */; };
+		04D5212126260A7A004F351B /* OpenedAppEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5211526260A7A004F351B /* OpenedAppEvent.swift */; };
+		04D5212426260A7A004F351B /* LikedReinforcementCardEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5211826260A7A004F351B /* LikedReinforcementCardEvent.swift */; };
+		04D5212626260A7A004F351B /* WroteReinforcementCardNoteEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5211A26260A7A004F351B /* WroteReinforcementCardNoteEvent.swift */; };
+		04D5212726260A7A004F351B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5211B26260A7A004F351B /* Event.swift */; };
+		04D5212C26260B2C004F351B /* EventManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5212B26260B2C004F351B /* EventManager.swift */; };
+		04D5212F26260B96004F351B /* NSManagedObjectContext+additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5212E26260B96004F351B /* NSManagedObjectContext+additions.swift */; };
+		04D5213626260D60004F351B /* DateFormatter+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5213526260D60004F351B /* DateFormatter+Additions.swift */; };
+		04D5214126260F90004F351B /* StorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D5214026260F8F004F351B /* StorageProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		04A9126D262606A10007EF2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A91270262606A10007EF2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A91272262606A10007EF2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04D5211126260A7A004F351B /* OpenedAppDailyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedAppDailyEvent.swift; sourceTree = "<group>"; };
+		04D5211326260A7A004F351B /* CompletedActivityEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompletedActivityEvent.swift; sourceTree = "<group>"; };
+		04D5211526260A7A004F351B /* OpenedAppEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenedAppEvent.swift; sourceTree = "<group>"; };
+		04D5211826260A7A004F351B /* LikedReinforcementCardEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikedReinforcementCardEvent.swift; sourceTree = "<group>"; };
+		04D5211A26260A7A004F351B /* WroteReinforcementCardNoteEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WroteReinforcementCardNoteEvent.swift; sourceTree = "<group>"; };
+		04D5211B26260A7A004F351B /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		04D5212B26260B2C004F351B /* EventManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManager.swift; sourceTree = "<group>"; };
+		04D5212E26260B96004F351B /* NSManagedObjectContext+additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+additions.swift"; sourceTree = "<group>"; };
+		04D5213526260D60004F351B /* DateFormatter+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Additions.swift"; sourceTree = "<group>"; };
+		04D5214026260F8F004F351B /* StorageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,10 @@
 			children = (
 				04A91261262606A00007EF2E /* AppDelegate.swift */,
 				04A91263262606A00007EF2E /* SceneDelegate.swift */,
+				04D5212B26260B2C004F351B /* EventManager.swift */,
+				04D5214026260F8F004F351B /* StorageProvider.swift */,
+				04D5213426260CCD004F351B /* Extensions */,
+				04D520F726260A04004F351B /* Models */,
 				04A91265262606A00007EF2E /* ViewController.swift */,
 				04A91267262606A00007EF2E /* Main.storyboard */,
 				04A9126D262606A10007EF2E /* Assets.xcassets */,
@@ -68,6 +92,28 @@
 				04A9126A262606A10007EF2E /* EventTracker.xcdatamodeld */,
 			);
 			path = EventTracker;
+			sourceTree = "<group>";
+		};
+		04D520F726260A04004F351B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04D5211326260A7A004F351B /* CompletedActivityEvent.swift */,
+				04D5211B26260A7A004F351B /* Event.swift */,
+				04D5211826260A7A004F351B /* LikedReinforcementCardEvent.swift */,
+				04D5211126260A7A004F351B /* OpenedAppDailyEvent.swift */,
+				04D5211526260A7A004F351B /* OpenedAppEvent.swift */,
+				04D5211A26260A7A004F351B /* WroteReinforcementCardNoteEvent.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		04D5213426260CCD004F351B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				04D5212E26260B96004F351B /* NSManagedObjectContext+additions.swift */,
+				04D5213526260D60004F351B /* DateFormatter+Additions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +186,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D5212426260A7A004F351B /* LikedReinforcementCardEvent.swift in Sources */,
+				04D5212F26260B96004F351B /* NSManagedObjectContext+additions.swift in Sources */,
+				04D5212126260A7A004F351B /* OpenedAppEvent.swift in Sources */,
+				04D5211D26260A7A004F351B /* OpenedAppDailyEvent.swift in Sources */,
+				04D5213626260D60004F351B /* DateFormatter+Additions.swift in Sources */,
+				04D5211F26260A7A004F351B /* CompletedActivityEvent.swift in Sources */,
+				04D5214126260F90004F351B /* StorageProvider.swift in Sources */,
 				04A91266262606A00007EF2E /* ViewController.swift in Sources */,
 				04A91262262606A00007EF2E /* AppDelegate.swift in Sources */,
+				04D5212726260A7A004F351B /* Event.swift in Sources */,
+				04D5212C26260B2C004F351B /* EventManager.swift in Sources */,
 				04A91264262606A00007EF2E /* SceneDelegate.swift in Sources */,
+				04D5212626260A7A004F351B /* WroteReinforcementCardNoteEvent.swift in Sources */,
 				04A9126C262606A10007EF2E /* EventTracker.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
