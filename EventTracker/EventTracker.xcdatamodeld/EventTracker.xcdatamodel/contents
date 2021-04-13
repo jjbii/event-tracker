@@ -38,11 +38,11 @@
         </uniquenessConstraints>
     </entity>
     <elements>
-        <element name="CompletedActivityEvent" positionX="-54" positionY="9" width="128" height="58"/>
-        <element name="Event" positionX="-63" positionY="-18" width="128" height="73"/>
-        <element name="LikedReinforcementCardEvent" positionX="-36" positionY="18" width="128" height="58"/>
-        <element name="OpenedAppDailyEvent" positionX="-18" positionY="36" width="128" height="58"/>
-        <element name="OpenedAppEvent" positionX="0" positionY="54" width="128" height="43"/>
-        <element name="WroteReinforcementCardNoteEvent" positionX="18" positionY="63" width="128" height="58"/>
+        <element name="CompletedActivityEvent" positionX="-147.5078125" positionY="127.125" width="157.015625" height="58"/>
+        <element name="Event" positionX="190.84765625" positionY="-69.8203125" width="128" height="73"/>
+        <element name="LikedReinforcementCardEvent" positionX="-105.328125" positionY="199.859375" width="187.80078125" height="58"/>
+        <element name="OpenedAppDailyEvent" positionX="-165.80078125" positionY="55.13671875" width="128" height="58"/>
+        <element name="OpenedAppEvent" positionX="-186.125" positionY="-4.82421875" width="128" height="43"/>
+        <element name="WroteReinforcementCardNoteEvent" positionX="-37.41796875" positionY="281.3203125" width="224.65234375" height="58"/>
     </elements>
 </model>
