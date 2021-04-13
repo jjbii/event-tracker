@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H524" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CompletedActivityEvent" representedClassName="CompletedActivityEvent" parentEntity="Event" syncable="YES">
+        <attribute name="activityId" attributeType="Integer 32" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Event" representedClassName="Event" isAbstract="YES" syncable="YES">
+        <attribute name="actionValue" attributeType="String"/>
+        <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="LikedReinforcementCardEvent" representedClassName="LikedReinforcementCardEvent" parentEntity="Event" syncable="YES">
+        <attribute name="cardId" attributeType="Integer 32" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="OpenedAppDailyEvent" representedClassName="OpenedAppDailyEvent" parentEntity="Event" syncable="YES">
+        <attribute name="day" attributeType="String"/>
+    </entity>
+    <entity name="OpenedAppEvent" representedClassName="OpenedAppEvent" parentEntity="Event" syncable="YES"/>
+    <entity name="WroteReinforcementCardNoteEvent" representedClassName="WroteReinforcementCardNoteEvent" parentEntity="Event" syncable="YES">
+        <attribute name="cardId" attributeType="Integer 32" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="Event" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="CompletedActivityEvent" positionX="-54" positionY="9" width="128" height="58"/>
+        <element name="LikedReinforcementCardEvent" positionX="-36" positionY="18" width="128" height="58"/>
+        <element name="OpenedAppDailyEvent" positionX="-18" positionY="36" width="128" height="58"/>
+        <element name="OpenedAppEvent" positionX="0" positionY="54" width="128" height="43"/>
+        <element name="WroteReinforcementCardNoteEvent" positionX="18" positionY="63" width="128" height="58"/>
+    </elements>
 </model>
